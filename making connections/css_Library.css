@@ -1,0 +1,439 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Amatic SC", cursive;
+}
+#main {
+}
+
+/* A elements for Nav */
+a.a_nav {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+/* If you want a header with flex in it */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Nav background color and spacing */
+.nav {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Nav bar on the bottom of the page */
+.navbar_bottom {
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Nav items, i.e. home buttons, profile buttons, about buttons, etc... */
+.nav_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 10px;
+}
+
+/* A list made to be flat instead of up and down */
+.nav_list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+/* right */
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+/* left */
+.left {
+    flex-direction: column;
+}
+
+
+.flex_colum {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+}
+
+.map_marker {
+    height: 30px;
+    width: 20px;
+}
+
+.gear {
+    height: 20px;
+    width: 20px;
+}
+
+/* row might not actually do anything... */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.alg-middle{
+    align-items: center;
+}
+
+.middle{
+    justify-content: center;
+    align-items: center;
+}
+
+/* col-1 takes up 1 flex */
+.col-1,
+.col-2,
+.col-3 {
+    flex: 1;
+}
+
+/* Takes up 2 flex */
+.col-2 {
+    flex: 2;
+}
+
+/* Takes up 3 flex */
+.col-3 {
+    flex: 3;
+}
+
+/* The main part of the container with a top. Adjust height and width to change size, and change margin to to change where it is.*/
+/* with margin 0 auto it is currently centered in whatever container it is in */
+/* ^ I was wrong this just centers the stuff inside this container */
+.main_container {
+    display: flex;
+    padding: 0 20%;
+}
+.container {
+    border: solid silver;
+}
+.user_container{
+    border: solid silver;
+}
+.user_image{
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    position:absolute;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    border: silver solid;
+}
+.friend_img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+/* The top part of the container. Could possibly turn this into a nav bar. */
+/* Currently set to 20% of the height of the container with top */
+.container-top {
+    background-color: #333333;
+    height: 20%;
+}
+.container-small{
+    border: solid silver
+}
+.container-top-small{
+    background-color: #333333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.user-top{
+    display: block;
+    background-color: lightblue;
+    height: 60px;
+    position: relative;
+}
+/* Where you put the contents. */
+/* Currently set to 90% of the container */
+/* Set to the center of the container with "margin: 0 auto" */
+.container-contents {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* COOKIE POP UP!!!!!!!!!!!!!! */
+/* THIS IS THE SCRIPT 
+function closeCookie() {
+            let checkbox = document.getElementById("cookie_check_Box")
+            let alert = document.getElementById("hidden_alert")
+            if (checkbox.checked == true) {
+                document.getElementById("cookie-popup").style.display = "none";
+            } else {
+                alert.style.display = "block";
+            }
+        } */
+
+/* The popup cookie - hidden by default */
+#cookie-popup {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    border: solid black;
+    width: 100%;
+}
+
+/* cookie container, where you add the script */
+.cookie-container {
+    padding: 10px;
+    background-color: white;
+}
+
+/* Set a style for the close button */
+.close_button {
+    color: white;
+    padding: 16px;
+    border: none;
+    width: 100%;
+    opacity: 0.8;
+    background-color: red;
+    margin-bottom: 10px;
+}
+.close_button:hover {
+    background-color: rgb(199, 0, 0);
+    cursor: pointer;
+}
+
+/* Class to make elements hidden */
+.hidden {
+    display: none;
+}
+
+/* Sets the color of something to black */
+.black {
+    color: black;
+}
+
+/* The alert message box */
+#hidden_alert {
+    padding: 20px;
+    background-color: red;
+    color: white;
+    margin-bottom: 15px;
+    display: none;
+}
+
+/* How much the web page blurs while this cookie pop up is open */
+.blur {
+    filter: blur(8px);
+}
+/* END OF COOKIE POP UP!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.border {
+    border: solid black 1px;
+}
+
+/* add text size to a class*/
+.text-10px {
+    font-size: 10px;
+}
+.text-20 {
+    font-size: 20px;
+}
+.text-30 {
+    font-size: 30px;
+}
+.text-40 {
+    font-size: 40px;
+}
+.text-60 {
+    font-size: 60px;
+}
+.text-80 {
+    font-size: 80px;
+}
+
+/* add margin top to a class */
+.mar-top-10{
+    margin-top: 10px;
+}
+.mar-top-20 {
+    margin-top: 20px;
+}
+.mar-top-40 {
+    margin-top: 40px;
+}
+.mar-top-60 {
+    margin-top: 60px;
+}
+.mar-top-80 {
+    margin-top: 80px;
+}
+
+/* Add margin left to a class */
+.mar-left-5{
+    margin-left: 5px;
+}
+.mar-left-20 {
+    margin-left: 20px;
+}
+
+/* Add margin right to a class */
+.mar-right-20 {
+    margin-right: 20px;
+}
+
+/* Add margin bottom to a class */
+.mar-bottom-20 {
+    margin-bottom: 20px;
+}
+
+/* add margin to a class */
+.mar {
+    margin: 20px;
+}
+
+/* add width to a class */
+.width-30 {
+    width: 30%;
+}
+
+/* add padding 10px to a class */
+.padding-10 {
+    padding: 10px;
+}
+
+/* add padding 20px to a class */
+.padding-20 {
+    padding: 20px;
+}
+
+/* add padding 30px to a class */
+.padding-30 {
+    padding: 30px;
+}
+
+/* add padding 40px to a class*/
+.padding-40 {
+    padding: 40px;
+}
+.padding-top-10{
+    padding-top: 10px;
+}
+
+/* Makes color of div */
+.white {
+    color: white;
+}
+
+.grey{
+    color: grey;
+}
+
+/* Using this to change color of div's on press of night mode button */
+.night {
+    background-color: #333333;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!! */
+/* Bucha buttons */
+
+/* The first button which everything was based on */
+.btn {
+    color: white;
+    background-color: rgb(98, 151, 197);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px 2px 15px;
+    text-shadow: 5px black;
+    border: solid black;
+}
+
+.btn_accept{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: none;
+}
+
+.btn_decline{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: none;
+}
+.btn_round{
+    color: black;
+    background-color: silver;
+    border-radius: 50%;
+    min-width: 25px;
+    min-height: 25px;
+}
+
+/* Green Button */
+.btn_green {
+    color: black;
+    background-color: #5af158;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px 2px 15px;
+    box-shadow: 20px black;
+    text-shadow: 20px black;
+    border: solid black;
+}
+
+/* Yellow Button */
+.btn_Yellow {
+    color: black;
+    background-color: #ffae42;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px 2px 15px;
+    box-shadow: 20px black;
+    text-shadow: 20px black;
+    border: solid black;
+}
+
+/* What .btn does on hover */
+.btn:hover {
+    background-color: rgb(85, 133, 175);
+}
+
+/* What yellow button does on hover */
+.btn_Yellow:hover {
+    background-color: #e49a39;
+}
+
+/* What green button does on hover */
+.btn_green:hover {
+    background-color: #42b440;
+}

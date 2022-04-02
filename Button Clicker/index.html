@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Source+Code+Pro rel=" stylesheet>
+</head>
+
+<body>
+    <div class="main_cont">
+        <div class="nav navitems nav_list">
+            <h1>Dojonary</h1>
+            <input type="text" class="search" placeholder="Search">
+            <input type="button" class="btn" value="Login" onclick="login()">
+        </div>
+        <div id="main">
+            <div class="left col-2 mar-top-20">
+                <div class="container">
+                    <div class="container-contents middle">
+                        <!-- add ul -->
+                        <li><h1>ninja</h1></li>
+                        <li><p class="text-20px">noun</p></li>
+                        <li>Plural: <i>ninjas</i></li>
+                        <li><input type="button" class="btn_Yellow mar-top-20" value="likes: " onclick="addEvent();"></li>
+                    </div>
+                    <div class="container-contents col-2 mar-left-20 middle">
+                        <p class="text-20px">A practitioner skilled in the <a href="">Japanese</a> art of <a href="">ninjutsu</a></p>
+                    </div>
+                </div>
+                <div class="container-with-top mar-top-20">
+                    <div class="container-contents col-1 mar-top-20 middle">
+                        <li><h1>ninja</h1></li>
+                        <li><p class="text-20px">noun</p></li>
+                        <li>Plural: <i>ninjas</i></li>
+                        <li><input type="button" class="btn_Yellow2 mar-top-20" value="likes: " onclick="addEvent2();"></li>
+                    </div>
+                    <div class="container-contents col-2 mar-left-20 middle">
+                        <p class="text-20px">A <a href="">programmer</a> who breaks down problems with <a
+                                href="">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right col-1 mar-left-20 mar-top-20 height_50px">
+                <div class="container-with-top">
+                    <div class="container-contents">
+                        <li><p class="non_bol">Dojonary is defined by <strong>YOU</strong></p></li>
+                        <li><input type="button" class="btn_green mar-top-20" value="Add Definition" onclick="definition();"></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>

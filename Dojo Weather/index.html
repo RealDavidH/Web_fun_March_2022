@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_Library.css">
+</head>
+
+<body>
+    <div class="main_cont blur">
+        <div class="nav">
+            <div class="left col-1 middle flex">
+                <h1 class="text-40">DojoWeather</h1>
+            </div>
+            <div class="right row text-30 col-1 middle gap-40">
+                <a class="a_nav" onclick="weatherReport();">Burbank</a>
+                <a class="a_nav" onclick="weatherReport();">Chicago</a>
+                <a class="a_nav" onclick="weatherReport()">Dallas</a>
+            </div>
+        </div>
+        <div class="main_container">
+            <div class="nav_2">
+                <div class="left">
+                    <p class="text-30">San Jose</p>
+                </div>
+                <div class="right flex row">
+                    <label for="temperature">Show temperature in:</label>
+                    <select name="temperature" id="temperature" onchange="isFahrenheit();">
+                        <option value="Fahrenheit">F°</option>
+                        <option value="Celsius">C°</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container flex row gap-20">
+                <div class="container col-1 background-light-grey middle padding-10">
+                    <div class="top flex_colum middle">
+                        <p class="text-30 padding-10 ">Today</p>
+                        <img src="assets/some_rain.png" class="user_image" alt="">
+                        <p class="padding-10">some rain</p>
+                    </div>
+                    <div class="container flex_space-between padding-10">
+                        <p class="text-20 red tempH_today">75°</p>
+                        <p class="text-20 blue tempC_today">65°</p>
+                    </div>
+                </div>
+                <div class="container col-1 background-light-grey middle padding-10">
+                    <div class="top flex_colum middle">
+                        <p class="text-30 padding-10">Tomorrow</p>
+                        <img src="assets/some_sun.png" class="user_image" alt="">
+                        <p class="padding-10">some sun</p>
+                    </div>
+                    <div class="container flex_space-between padding-10">
+                        <p class="text-20 red tempH_tomorrow">80°</p>
+                        <p class="text-20 blue tempC_tomorrow">66°</p>
+                    </div>
+                </div>
+                <div class="container col-1 background-light-grey middle padding-10">
+                    <div class="top flex_colum middle">
+                        <p class="text-30 padding-10">Friday</p>
+                        <img src="assets/some_clouds.png" class="user_image" alt="">
+                        <p class="padding-10">some clouds</p>
+                    </div>
+                    <div class="container flex_space-between padding-10">
+                        <p class="text-20 red tempH_Friday">69°</p>
+                        <p class="text-20 blue tempC_Friday">61°</p>
+                    </div>
+                </div>
+                <div class="container col-1 background-light-grey middle padding-10">
+                    <div class="top flex_colum middle">
+                        <p class="text-30 padding-10">Saturday</p>
+                        <img src="assets/some_sun.png" class="user_image" alt="">
+                        <p class="padding-10">some sun</p>
+                    </div>
+                    <div class="container flex_space-between padding-10">
+                        <p class="text-20 red tempH_Saturday">78°</p>
+                        <p class="text-20 blue tempC_Saturday">70°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cookie-popup">
+        <div class="cookie-container flex row middle padding-10">
+             <div class="container"> <!--onclick="checkBox()" Uncomment this to make it work -->
+                <img src="assets/cookie.png" alt="">
+            </div>  
+            <div class="container">
+                <p>Stop! Cookie time</p>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features, and to analyse our traffic. <a href="">Read more...</a></p>
+            </div>
+            <div class="container">
+                <label for="cookie_check_Box">* Agree to our cookie <a href="">settings:</a></label>
+                <input type="checkbox" id="cookie_check_Box">
+                <button type="button" class="close_button" onclick="closeCookie()">Close</button>
+            </div>
+        </div>
+        <div id="hidden_alert" class="padding-10">
+            <p>You must agree to give us your soul</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page part two</title>
+    <link rel="stylesheet" href="css_Library.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Source+Code+Pro rel=" stylesheet>
+</head>
+
+<body>
+    <div id="main">
+        <div class="nav">
+            <div class="navitems">
+                <h1>Profile</h1>
+            </div>
+            <div class="nav_list">
+                <a href="" class="a_nav">Home</a>
+                <a href="" class="a_nav">My Profile</a>
+                <a href="" class="a_nav">Find Connections</a>
+                <input type="button" class="btn" value="Login" onclick="login()">
+            </div>
+        </div>
+        <div class="main_container">
+            <div class="left col-2">
+                <div class="user_container mar-bottom-20">
+                    <div class="user-top padding-10">
+                        <img src="icons/user-circle.png" class="user_image" alt="">
+                    </div>
+                    <div class="mar-top-20 padding-10">
+                        <p class="text-30">Jane Doe</p>
+                        <img src="icons/map-marker.png" class="map_marker" alt=""> Seattle
+                        <p class="">Developer | Engineer | Problem Solver</p>
+                        <p>Master of shadows and the Internet!</p>
+                        <img src="icons/gear.png" class="gear mar-top-20" alt="gear icon"> <a href="">edit
+                            profile</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container-top">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="container-contents padding-10">
+                        <p class="text-20">Coding Dojo - Full Stack Bootcamp</p>
+                        <p class="grey">Dec 2019 - Mar 2020</p>
+                        <p class="text-20 mar-top-10">Triple black belt in Python, MERN, and C#...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right col-1 mar-left-20">
+                <div class="container-small mar-bottom-20">
+                    <div class="container-top-small">
+                        <button class="btn_round" value="null">2</button>
+                        <p class="white">Connection Requests</p>
+                    </div>
+                    <div class="container-contents padding-10">
+                        <div class="left col-2">
+                            <div class="row alg-middle padding-10">
+                                <img src="images/phil-s.jpg" class="friend_img border" alt="Phil">
+                                <p class="mar-left-5">Phil K</p>
+                            </div>
+                            <div class="row alg-middle padding-10">
+                                <img src="images/todd-s.jpg" class="friend_img border" alt="Todd S">
+                                <p class="mar-left-5">Todd S</p>
+                            </div>
+                        </div>
+                        <div class="right middle col-1">
+                            <div class="middle">
+                                <button type="button" class="btn_accept"> <img src="icons/accept-circle.png"
+                                        class="btn_accept" /></button>
+                                <button type="button" class="btn_decline"> <img src="/icons/close-circle.png"
+                                        class="btn_decline"></button>
+                            </div>
+                            <div class="middle padding-top-10">
+                                <button type="button" class="btn_accept"> <img src="icons/accept-circle.png"
+                                        class="btn_accept" /></button>
+                                <button type="button" class="btn_decline"> <img src="/icons/close-circle.png"
+                                        class="btn_decline"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-small">
+                    <div class="container-top-small">
+                        <button class="btn_round" value="null">500+</button>
+                        <p class="white">Your Connections</p>
+                    </div>
+                    <div class="container-contents padding-10">
+                        <div class="left col-2">
+                            <div class="row alg-middle padding-10">
+                                <img src="images/alayne-s.jpg" class="friend_img border" alt="alayne-s">
+                                <p class="mar-left-5">Alayne S</p>
+                            </div>
+                            <div class="row alg-middle padding-10">
+                                <img src="images/anne-s.jpg" class="friend_img border" alt="anne-s">
+                                <p class="mar-left-5">Anne S</p>
+                            </div>
+                            <div class="row alg-middle padding-10">
+                                <img src="images/IMG_8012.jpg" class="friend_img border" alt="Jamil">
+                                <p class="mar-left-5">Jamil M</p>
+                            </div>
+                            <div class="row alg-middle padding-10">
+                                <img src="images/jane-m.jpg" class="friend_img border" alt="jane-m">
+                                <p class="mar-left-5">Jane M</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js_Library.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+}
+
+li{
+    list-style: none;
+}
+/* A elements for Nav */
+a.a_nav {
+    text-decoration: none;
+    color: white;
+}
+/* Nav background color and spacing */
+.nav {
+    background-color: silver;
+    color: black;
+    width: 80%;
+    justify-content: space-around;
+    margin: 0 auto;
+    min-height: 60px;
+    padding: 20px;
+}
+
+/* nav background and color but on the bottom of the page */
+.navbar_bottom {
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Nav items, i.e. home buttons, profile buttons, about buttons, etc... */
+.nav_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-left: 20px;
+    gap: 10px;
+    width: 100%;
+}
+
+/* makes content go to the exact center of container */
+.middle{
+    justify-content: center;
+    align-items: center;
+}
+
+/* Actual button */
+.btn {
+    color: white;
+    background-color: rgb(98, 151, 197);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px 2px 15px;
+    text-shadow: 5px black;
+    border: solid black;
+}
+
+.btn_green{
+    color: black;
+    background-color: #5af158;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px 2px 15px;
+    box-shadow: 20px black;
+    text-shadow: 20px black;
+    border: solid black;
+}
+
+.btn_Yellow{
+    color: black;
+    background-color: #FFAE42;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px 2px 15px;
+    box-shadow: 20px black;
+    text-shadow: 20px black;
+    border: solid black;
+}
+.btn_Yellow2{
+    color: black;
+    background-color: #FFAE42;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px 2px 15px;
+    box-shadow: 20px black;
+    text-shadow: 20px black;
+    border: solid black;
+}
+
+.btn:hover{
+    background-color: rgb(85, 133, 175);
+}
+.btn_Yellow:hover{
+    background-color: #e49a39;
+}
+.btn_Yellow2:hover{
+    background-color: #e49a39;
+}
+
+.btn_green:hover{
+    background-color: #42b440;
+}
+
+/* A list made to be flat instead of up and down */
+.nav_list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main_cont{
+    padding: 0% 20%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+}
+
+#main{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Makes text size 20px */
+.text-20px{
+    font-size: 20px;
+}
+
+/* Makes text size 40px */
+.text-40px {
+    font-size: 40px;
+    }
+
+/* add margin top to a class */
+.mar-top-20{
+    margin-top: 20px;
+}
+
+/* Add margin left to a class */
+.mar-left-20{
+    margin-left: 20px;
+}
+
+/* Add margin right to a class */
+.mar-right-20{
+    margin-right: 20px;
+}
+
+/* Add margin bottom to a class */
+.mar-bottom-20{
+    margin-bottom: 20px;
+}
+
+
+/* row might not actually do anything... */
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.search{
+    width: 40%;
+    font-size: 125%;
+    border: solid black;
+}
+
+.non_bol{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* col-1 takes up 1 flex */
+.col-1,
+.col-2,
+.col-3 {
+    display: flex;
+    flex: 1;
+}
+/* Takes up 2 flex */
+.col-2 {
+    flex: 2;
+}
+/* Takes up 3 flex */
+.col-3 {
+    flex: 3;
+}
+/* The main part of the container with a top. Adjust height and width to change size, and change margin to to change where it is.*/
+/* with margin 0 auto it is currently centered in whatever container it is in */
+/* e */
+.container-with-top {
+    background-color: lightblue;
+    border: solid black;
+    display: flex;
+    padding: 10px;
+}
+/* The top part of the container. Could possibly turn this into a nav bar. */
+/* Currently set to 20% of the height of the container with top */
+.container-top {
+    background-color: darkcyan;
+    height: 20%;
+}
+/* Where you put the contents. */
+/* Currently set to 90% of the container */
+/* Set to the center of the container with "margin: 0 auto" */
+.container-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* COOKIE POP UP!!!!!!!!!!!!!! */
+/* The popup cookie - hidden by default */
+#cookie-popup {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    border: solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+}
+
+/* Add styles to the cookie container */
+.cookie-container {
+    min-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Set a style for the close button */
+.cookie-container .close_button {
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    background-color: red;
+}
+/* Class to make elements hidden */
+.hidden {
+    display: none;
+}
+.black{
+    color: black;
+}
+
+/* The alert message box */
+#hidden_alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    display: none;
+}
+
+/* The close button */
+.x_btn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* END OFCOOKIE POP UP!!!!!!!!!!!!!! */
